@@ -1,0 +1,515 @@
+@charset "UTF-8";
+@import url("typography.css");
+@import url("lightbox.css");
+/*------------------------------------------------------ 
+Global Style Sheet
+Version:	2.0
+author:		Anthony Ha
+email:		aha@pixelsomething.com
+website:	http://www.pixelsomething.com/
+--------------------------------------------------------*/
+
+html { -webkit-text-size-adjust:none; }
+
+html, div, ul, ol, li, dl, dt, dd, pre, form, blockquote, fieldset, input {
+	margin: 0;
+	padding: 0;
+}
+hr {
+	color: #CCCCCC;
+}
+
+ul, ol {
+	padding-left: 20px;
+	margin-bottom: 1.5em;
+}
+
+ol.ordered-alpha li {
+	margin-bottom:0.5em;
+}
+fieldset, img {
+	border: none;
+}
+caption, th {
+	text-align: center;
+	background: #003D86;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	color: #FFFFFF;
+	padding: 4px;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+	background: #4D5051 url(../images/home_img_Bg.jpg) no-repeat left top;
+	margin: 0px;
+	padding: 0px;
+}
+#wrapper {
+	width: 920px;
+	padding: 0px 50px;
+	background: url(../images/main_blue_Bg.png) repeat-y center top;
+	margin: 0px auto;
+}
+#banner {
+	margin: 0px 0px 12px;
+	padding: 0px;
+	height: 108px;
+}
+#logo {
+	height: 49px;
+	width: 650px;
+	margin: 0px;
+	padding: 25px 0px 0px 30px;
+	float: left;
+}
+#main {
+	background: #FFFFFF;
+	padding: 10px;
+}
+#mainAd {
+	width: 900px;
+	height: 230px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#leftColumn {
+	width: 253px;
+	margin: 0px;
+	padding: 40px 0px 0px 7px;
+	float: left;
+}
+#rightColumn {
+	width: 640px;
+	margin-left: 260px;
+	padding-top: 20px;
+}
+#content {
+	padding: 0px;
+	margin: 0px;
+	background: #FFFFFF;
+}
+#sitmap {
+	padding: 0px;
+	margin: 0px;
+	background: #FFFFFF;
+}
+.column1-2 {
+	float: left;
+	width: 230px;
+	padding: 0px 15px 0px 0px;
+	margin-right: 15px;
+	margin-top: 15px;
+}
+.column2-2 {
+	float: left;
+	width: 359px;
+	border-left: 1px solid #9eceec;
+	margin: 15px 0px 0px;
+	padding: 0px 0px 0px 20px;
+}
+.columnLeft2 {
+	float: left;
+	width: 359px;
+	margin: 15px 0px 0px;
+	padding: 0px 0px 0px 20px;
+}
+.column1-2 h1 {
+	margin: 0px 0px 20px;
+	padding: 0px 0px 5px;
+	font-size: 1em;
+	color: #002D73;
+	line-height: 1.2em;
+}
+.column2-2 h1 {
+	margin: 0px 0px 20px;
+	padding: 0px 0px 5px;
+	font-size: 1em;
+	color: #002D73;
+	line-height: 1.2em;
+}
+#footer {
+	width: 920px;
+	padding: 0px 50px 20px;
+	background: url(../images/footer_blue_Bg.png) no-repeat center bottom;
+	height: 140px;
+	margin: 0px auto;
+}
+.footcolumn1-2 {
+	float: left;
+	width: 205px;
+	padding: 0px 30px;
+	font-size: 0.63em;
+	color: #a8a8a8;
+	line-height: normal;
+	text-align: center;
+}
+.footcolumn2-2 {
+	float: left;
+	width: 635px;
+	padding: 90px 5px 0;
+	font-size: 0.63em;
+	color: #797979;
+	vertical-align: bottom;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+#content .portfolioLeft {
+	float: left;
+	width: 240px;
+	margin-right: 20px;
+}
+#content .portfolioRight {
+	float: left;
+	width: 380px;
+}
+#content .portfolioWide {
+	float: left;
+	width: 100%;
+}
+#sNavBar {
+	width: 230px;
+	margin: 0px;
+	padding: 0px;
+}
+#sNavBar ul {
+	padding: 0;
+	margin: 0px;
+	list-style: none;
+	background: url(../images/snavShadow.jpg) no-repeat center top;
+}
+#sNavBar li {
+	padding: 0;
+	background: url(../images/snav_divider.gif) no-repeat bottom;
+}
+#sNavBar a {
+	display: block;
+	padding: 10px 10px 10px 42px;
+}
+#sNavBar a:link, #sNavBar a:visited  {
+	text-decoration: none;
+	color: #003D86;
+	font-size: 0.917em;
+}
+#sNavBar a:hover {
+	text-decoration: none;
+	color: #9eceec;
+}
+#sNavBar span {
+	display: block;
+	padding: 10px 10px 0px 42px;
+	color: #003D86;
+	font-size: 0.917em;
+}
+#sNavBar span a:link, #sNavBar span a:visited {
+	text-decoration: none;
+	font-size: 0.917em;
+	color: #666;
+	padding-left:0px;
+}
+#sNavBar span a:hover {
+	text-decoration: none;
+	color: #9eceec;
+}
+#content .fundInfoLeft {
+	width: 380px;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+#content .fundInfoRight {
+	width: 240px;
+	float: left;
+	padding: 0px;
+	margin-left: 20px;
+}
+#content .imgRight {
+	float: right;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+#content ol {
+	list-style: decimal;
+}
+#content ul {
+	list-style: disc;
+}
+#content .bgColor1 {
+	background: url(../images/bgColor1.jpg) no-repeat top;
+	padding: 20px;
+}
+#content .pdfIcon {
+	padding-left:10px;
+	padding-bottom:15px;
+	margin-bottom:10px;
+}
+#content .pdfIcon img {
+	padding:0px;
+	margin:0px;
+}
+#content p.toTop {
+	margin-top:10px;
+	text-align:right;
+	font-size:0.85em;
+}
+
+
+
+#footerLinks {
+	width: 930px;
+	padding: 0px 30px 20px;
+	height: 140px;
+	margin: 0px auto;
+}
+
+/*---added Dec 22, 2010 by Prasanna Kugananthan---*/
+.footercolumn1-0 {
+	float: left;
+	width: 254px;
+	color:#EBEBEB;
+	margin: 10px 0px 0px;
+	padding: 0px;
+}
+
+.footercolumn1-0 ul {
+	list-style: none;
+}
+
+.footercolumn1-0 li {
+	border-bottom: 1px dotted #EBEBEB;
+	padding: 2px 0px 2px;
+}
+/*------------------------------------------------*/
+
+.footercolumn1-2 {
+	float: left;
+	width: 327px;
+	color:#EBEBEB;
+	/*margin: 10px 50px 0px 255px;*/ /*removed from previous 2 column layout */
+	margin: 10px 0px 0px 0px; /* ammended for new column .footercolumn1-0 */
+	padding: 0px;
+}
+.footercolumn2-2 {
+	float: left;
+	width: 327px;
+	color:#EBEBEB;
+	margin: 10px 0px 0px;
+	padding: 0px;
+}
+.footercolumn1-2 ul {
+	list-style: none;
+}
+.footercolumn2-2 ul {
+	list-style: none;
+}
+.footercolumn1-2 li {
+	border-bottom: 1px dotted #EBEBEB;
+	padding: 2px 0px 2px;
+}
+.footercolumn2-2 li {
+	border-bottom: 1px dotted #EBEBEB;
+	padding: 2px 0px 2px;
+}
+.legalfooter {
+	padding: 20px 0px 20px 0px;
+	color:#ccc;
+	clear:left;
+	float:right;
+	margin-right:20px;
+	font-size:0.9em;
+	text-align:right;
+}
+.legalfooter a {
+	color:#ccc;
+}
+#sitmap ul {
+	list-style: url(../images/right_chevron.gif) none;
+}
+#sitmap a {
+	color: #666666;
+}
+.bioRowOdd {
+	border-bottom: 1px dotted #9ECEEC;
+	margin: 0px;
+	padding-top: 20px;
+}
+.biophoto {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 70px;
+}
+.bioInfobrief {
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+	float: left;
+	width: 510px;
+}
+.bioInfobrief ul {
+	list-style: url(../images/right_chevron.gif) none;
+}
+.bioInfobrief a {
+	color: #666666;
+}
+.columnTitle1 {
+	text-align: left;
+	background: #003D86;
+	border-left: 1px solid #666666;
+}
+.columnTitle2 {
+	text-align: left;
+	background: #666666;
+	border-left: 1px solid #666666;
+}
+.backtotop {
+	display: block;
+	height: 20px;
+	line-height:20px;
+	font-size:0.9em;
+	color:#000000;	
+}
+
+.backtotop a {
+	text-decoration: none;	
+}
+
+.backtotop a:hover {
+	text-decoration: underline;
+}
+
+/*----PRISM AWARD STYLES----*/
+
+table.special-event {
+	border: 1px solid #D7D7D7;
+	text-align:left;
+}
+
+table.special-event td {
+	margin: 0;
+	padding: 0 25px 0 25px;
+	text-align:left;
+	font-size:1em;
+}
+
+table.special-event td.prism-event-bg {
+	padding-top:25px;
+	background: url(../images/prism-award-assets/prism-special-event-bg.jpg) no-repeat top right;
+	height: 196px;
+	
+}
+
+table.special-event td.sponsor-bg {
+	background-color: #000000;
+	height:75px;
+}
+
+table.event-details td {
+	margin:0;
+	padding:0;
+	font-size:1.2em;
+	text-align:left
+}
+
+table.event-details td.larger {
+	font-size:1.8em;
+}
+
+table.event-details td.small {
+	font-size:0.8em;
+}
+
+/* Cap Preservattion Table */
+table tr.benchmark td {
+	border-top: 1px solid #000000;
+}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }  
+
+
+.newsletter td p img.inline-pic {
+	display: inline-block;
+	float:left;	
+	margin-right: 10px;
+}
+
+a.newsletter-signup {
+	height:45px!important;
+	width:230px!important;	
+	background: url(../images/newsletter-signup.jpg) no-repeat top left;
+	display:block;
+	text-indent:-999em;
+	padding:0!important;
+	margin:0!important;
+}
+
+a.newsletter-signup:hover {
+	background-position: bottom left;
+}
+
+.meta {
+	display:block;
+	padding-bottom:5px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #999;
+}
+
+.meta p {
+	font-size:0.85em;
+	margin-top:-10px !important;
+	margin-bottom:0 !important;
+	color: #999;
+}
+
+.meta p a {
+	text-decoration:none;
+}
+
+.meta p a:hover {
+	text-decoration:underline;
+}
+
+.article {
+	margin-right:20px !important;
+}
+
+.author-pic { display: inline-block; float:left; width:80px; height:100px; margin:0 10px 10px 0; border: 1px solid #CCC;}
+
+.promo-pic { display: inline-block; float:left; margin:0 10px 10px 0; border: 1px solid #CCC;}
+
+.bluehilight,
+table tr td.bluehilight,
+table tr.even td.bluehilight {
+	color: #003D86;
+	font-style: italic;
+}
+
+/* News styles : October 31, 2017 */
+#main {
+	min-height: 500px;
+	height: auto;
+}
+#footerLinks {
+	height: 100px;
+}
+.ddsmoothmenu ul li a {
+    font: normal 1em "Arial", Helvetica, sans-serif;
+}
+.footcolumn2-2 {
+	padding: 0 5px;
+}
+.footercolumn1-0 {
+	margin: 15px 0 0;
+}
+.legalfooter {
+	clear: none;
+}

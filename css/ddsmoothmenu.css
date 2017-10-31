@@ -1,0 +1,199 @@
+body {
+	font: 75% Verdana, Arial, Helvetica, sans-serif;
+}
+.topLinks {
+	height: 40px;
+	width: 365px;
+	font: 0.667em Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px 0px 0px 570px;
+	padding:5px 0px 0px 0px;
+	text-transform: uppercase;
+}
+.topLinks ul {
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.topLinks ul li {
+	position: relative;
+	display: inline;
+	float: left;
+}
+.topLinks ul li a {
+	display: block; /*background of menu items (default state)*/
+	padding: 0px 8px;
+	color:#1E1E1E;
+	text-decoration: none;
+}
+.topLinks ul li a:link, .topLinks ul li a:visited {
+	color:#1E1E1E;
+}
+.topLinks ul li a:hover {
+	background: none; /*background of menu items during onmouseover (hover state)*/
+	color: white;
+}
+.topLinks .home a:link {
+}
+.topLinks .about {
+	padding: 0px 8px 0px 0px;
+}
+.topLinks .download {
+	border-left: 1px solid #00397F;
+	color: #1E1E1E;
+	padding: 0px 0px 0px 8px;
+}
+.topLinks .download a:hover {
+	background: none; /*background of menu items during onmouseover (hover state)*/
+	color: white;
+}
+.topLinks .sitemap {
+	border-right: 1px solid #00397F;
+	color: #1E1E1E;
+	padding: 0px 8px 0px 0px;
+}
+.topLinks .sitemap a:hover {
+	background: none; /*background of menu items during onmouseover (hover state)*/
+	color: white;
+}
+.topLinks .contact{
+	padding: 0px 8px;
+}
+#headerBg {
+	height: 114px;
+	margin: 0px;
+	padding: 0px;
+}
+.ddsmoothmenu {
+	font: 1.25em "Arial Narrow Bold", "Arial Narrow", Arial, Helvetica, sans-serif;
+	width: 100%;
+	vertical-align: bottom;
+}
+.ddsmoothmenu ul {
+	z-index:100;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+/*Top level list items*/
+.ddsmoothmenu ul li {
+	position: relative;
+	display: inline;
+	float: left; /*background of menu bar (default state)*/
+	text-align: left;
+}
+/*Top level menu link items style*/
+.ddsmoothmenu ul li a {
+	display: block; /*background of menu items (default state)*/
+	color: white;
+	padding: 18px 10px 6px;
+	color: #2d2b2b;
+	text-decoration: none;
+	height: 36px;
+}
+* html .ddsmoothmenu ul li a { /*IE6 hack to get sub menu links to behave correctly*/
+	display: inline-block;
+}
+.ddsmoothmenu ul li a:link, .ddsmoothmenu ul li a:visited {
+	color: white;
+}
+.ddsmoothmenu ul li a:hover {
+	background: #cee6f5; /*background of menu items during onmouseover (hover state)*/
+	color:#003d86;
+}
+/*1st sub level menu*/
+.ddsmoothmenu ul li ul {
+	position: absolute;
+	left: 0;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+	background: #999;
+}
+/*Sub level menu list items (undo style from Top level List Items)*/
+.ddsmoothmenu ul li ul li {
+	display: list-item;
+	float: none;
+	text-align: left;
+	font-size: 11px;
+	font-weight: normal;
+	text-transform: none;
+}
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.ddsmoothmenu ul li ul li ul {
+	top: 0;
+}
+/* Sub level menu links style */
+.ddsmoothmenu ul li ul li a {
+	font: normal 1em Arial, Helvetica, sans-serif;
+	width: 148px; /*width of sub menus*/
+	padding: 6px 5px 6px 10px;
+	margin: 0;
+	border-top-width: 0;
+	border-bottom: 1px solid #CCCCCC;
+	height: auto;
+}
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass {
+	position: absolute;
+	top: 12px;
+	right: 7px;
+}
+.rightarrowclass {
+	position: absolute;
+	top: 8px;
+	right: 5px;
+}
+/* ######### CSS for shadow added to sub menus  ######### */
+
+.ddshadow {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	background: silver;
+}
+.toplevelshadow { /*shadow opacity. Doesn't work in IE*/
+	opacity: 0.0;
+}
+#smoothmenu1 .logo {
+	padding: 0px;
+	margin-right: 33px;
+}
+#smoothmenu1 .logo a {
+	margin: 0px;
+	padding: 0px;
+}
+#smoothmenu1 .prods {
+	width: 130px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	background: url(../images/main_nav_divider.gif) no-repeat left;
+}
+#smoothmenu1 .serv {
+	width: 130px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	background: url(../images/main_nav_divider.gif) no-repeat left;
+}
+
+#smoothmenu1 .market {
+	width: 130px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	background: url(../images/main_nav_divider.gif) no-repeat left;
+}
+
+#smoothmenu1 .media {
+	width: 130px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	background: url(../images/main_nav_divider.gif) no-repeat left;
+}
+#smoothmenu1 .invst {
+	width: 130px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	background: url(../images/main_nav_divider.gif) no-repeat left;
+}
